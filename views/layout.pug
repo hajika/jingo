@@ -43,8 +43,8 @@ include mixins/links
                   +anchor('/logout')(title='Become anonymous')
                     i.icon.ion-power
 
-      .tools
-        block tools
+      //-.tools
+        //-block tools
 
       .container
 
@@ -57,6 +57,9 @@ include mixins/links
 
           #main.hide-tools.col-md-8
             block content
+          
+          .toolsx.col-md-1
+            block tools
 
         if hasFooter()
           .row
